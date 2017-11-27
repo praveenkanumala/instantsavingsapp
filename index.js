@@ -37,6 +37,21 @@ app.get('/rest/InstantSavings/MetaDataFile/All', function (req, res) {
 	res.json(instant_savings_br);
 })
 
+// for analytic
+app.get('/rest/InstantSavings/MetaDataFile/Analytic', function (req, res) {
+	res.json(instant_savings_br);
+})
+
+// for triggers
+app.get('/rest/InstantSavings/MetaDataFile/Triggers', function (req, res) {
+	res.json(instant_savings_br);
+})
+
+// for package
+app.get('/rest/InstantSavings/MetaDataFile/Package', function (req, res) {
+	res.json(instant_savings_br);
+})
+
 // spin spin sugar
 app.listen(app.get('port'), function() {
 	console.log('running on port', app.get('port'))
